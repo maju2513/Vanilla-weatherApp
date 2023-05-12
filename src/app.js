@@ -30,6 +30,7 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let feelElement = document.querySelector("#feelike");
   let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
 
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
@@ -38,6 +39,11 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   feelElement.innerHTML = Math.round(response.data.temperature.feels_like);
   dateElement.innerHTML = formatDate(response.data.time * 1000);
+  iconElement.setAttribute(
+    "src",
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+  );
+  iconElement.setAttribute("alt", response.data.condition.description);
 }
 
 let apiKey = "09ff2040f222d54o3t0b9a81c6b225e3";
