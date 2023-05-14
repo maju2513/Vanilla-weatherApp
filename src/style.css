@@ -1,5 +1,7 @@
 body {
   font-family: Arial, sans-serif;
+  background-image: url(../media/clouds.jpg);
+  background-size: cover;
 }
 
 h1 {
@@ -38,15 +40,20 @@ li:first-letter {
   max-width: 600px;
   margin: 30px auto;
 }
-.weather-app {
-  padding: 20px;
-  border: 1px solid gray;
-  border-radius: 5px;
-}
+
 .overview {
   margin-bottom: 20px;
 }
-
+.weather-app {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+}
+.weather-temperature {
+  border-radius: 5px;
+}
 .weather-temperature img {
   margin-right: 5px;
   height: 64px;
@@ -68,4 +75,17 @@ li:first-letter {
 }
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+.btn-primary {
+  padding: 8px 16px;
+  background-color: #47a3ff;
+  border-color: #47a3ff;
+}
+.btn-primary:hover {
+  background-color: #267fe6;
+  border-color: #267fe6;
+}
+#city-input {
+  padding: 8px;
 }
