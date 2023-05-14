@@ -26,6 +26,10 @@ li {
   line-height: 19px;
 }
 
+a {
+  text-decoration: none;
+}
+
 li:first-letter {
   text-transform: capitalize;
 }
@@ -57,4 +61,11 @@ li:first-letter {
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
+}
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
