@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   background-image: url(../media/clouds.jpg);
   background-size: cover;
 }
@@ -28,8 +28,15 @@ li {
   line-height: 19px;
 }
 
-a {
+span a {
   text-decoration: none;
+}
+
+small a {
+  color: white;
+}
+small a :hover {
+  color: #47a3ff;
 }
 
 li:first-letter {
@@ -79,13 +86,26 @@ li:first-letter {
 
 .btn-primary {
   padding: 8px 16px;
-  background-color: #47a3ff;
-  border-color: #47a3ff;
+  background-color: #6db7bf;
+  border-color: #6db7bf;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 .btn-primary:hover {
-  background-color: #267fe6;
-  border-color: #267fe6;
+  background-color: #14909c;
+  border-color: #14909c;
 }
 #city-input {
   padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: none;
+  transition: border-color 0.3s ease;
+}
+@media (max-width: 768px) {
+  .col-6 {
+    width: 100%;
+  }
 }
