@@ -96,6 +96,11 @@ li:first-letter {
   background-color: #14909c;
   border-color: #14909c;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
 #city-input {
   padding: 8px;
   border: 1px solid #ccc;
@@ -103,6 +108,20 @@ li:first-letter {
   background-color: white;
   box-shadow: none;
   transition: border-color 0.3s ease;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  color: black;
+  opacity: 0.6;
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }
 @media (max-width: 768px) {
   .col-6 {
